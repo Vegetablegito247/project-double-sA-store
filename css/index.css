@@ -876,7 +876,7 @@ footer .foot-head {
     color: hsl(233, 7%, 76%);
 }
 
-@media (max-width: 376px) {
+@media (max-width: 428px) {
     nav {
         display: flex;
         justify-content: space-between;
