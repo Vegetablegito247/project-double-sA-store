@@ -1,0 +1,560 @@
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Manrope&family=Overpass:wght@400;700&family=Public+Sans:wght@300;400;700&family=Red+Hat+Text:ital,wght@0,700;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(0, 0%, 0%) !important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 8px 4px;
+    width: 100%;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 1rem hsl(0, 0%, 0%);
+}
+
+nav .logo,
+nav .search form,
+nav .details,
+nav .details .user,
+nav .details .help,
+nav .details .cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo .fa-bars {
+    padding-top: 8px;
+    margin-right: 1rem;
+    display: block;
+}
+
+nav .logo h3 .fa-tag {
+    margin-left: 10px;
+    color: hsl(240, 100%, 50%);
+}
+
+.search {
+    width: 450px;
+    border: 1px solid hsl(240, 100%, 50%);
+    border-radius: 6px;
+    padding: 4px 6px;
+}
+
+.search form .find .fa-magnifying-glass {
+    margin-right: 14px;
+    font-size: 16px;
+}
+
+.search form .find input[type=search] {
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 4px 6px;
+}
+
+.search form button {
+    background-color: hsl(240, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 6px;
+    width: 100px;
+    padding: 6px 0;
+    transition: 1.5s;
+}
+
+.search form button:hover {
+    background-color: hsl(240, 100%, 35%);
+}
+
+nav .details .user,
+nav .details .help,
+nav .details .cart {
+    width: 80px;
+}
+
+nav .details .user,
+nav .details .help {
+    margin-right: 10px;
+}
+
+nav .details .user i, 
+nav .details .help i,
+nav .details .cart i {
+    padding-top: 10px;
+}
+
+nav .details .user p,
+nav .details .help p,
+nav .details .cart p {
+    padding-top: 6px;
+}
+
+nav .details .fa-chevron-down {
+    margin-right: 10px;
+}
+
+nav .details .cart .fa-cart-shopping {
+    margin-left: 18px;
+}
+
+.add-cart-preview,
+.check-out,
+.proceed-next {
+    margin: 2.1rem 2rem 0;
+}
+
+.amount {
+    display: flex;
+    margin-bottom: 1rem;
+    width: 850px;
+    background-color: hsl(240, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 0 10px 20px;
+    border-radius: 6px;
+}
+
+.amount h5,
+.amount p {
+    margin-bottom: 0;
+}
+
+.amount p {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.check-list-1 {
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    box-shadow: 8px 5px 2rem hsl(240, 100%, 50%);
+    width: 850px;
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check,
+.check-add,
+.check-p {
+    display: flex;
+}
+
+.check-p-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.check-p-comp {
+    margin-left: 2rem;
+    margin-top: .6rem;
+    text-align: start;
+}
+
+.check-p-comp h3 {
+    font-size: 18px;
+}
+
+.check-p-comp h4 {
+    color: hsl(240, 100%, 50%);
+    font-size: 20px;
+}
+
+.check-logo {
+    font-size: 22px;
+}
+
+.check-logo i {
+    color: hsl(240, 100%, 50%);
+    margin-left: 10px;
+}
+
+.check-add {
+    margin-top: 2rem;
+}
+
+.check-add h4 {
+    margin: 0 14px;
+}
+
+ .check-add i {
+    padding: 10px;
+    background-color: hsl(240, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 4px;
+}
+
+.check-remove {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background-color: hsl(240, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 1rem;
+}
+
+.check-remove i {
+    margin-top: 8px;
+}
+
+.check-remove p {
+    margin-bottom: 0;
+}
+
+.summary {
+    width: 250px;
+    border-radius: 6px;
+    position: absolute;
+    top: 26%;
+    left: 75%;
+    z-index: 1;
+    background-color: white;
+    padding: 2px;
+    box-shadow: 8px 5px 2rem hsl(240, 100%, 50%);
+}
+
+.summary h6 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: .5rem 0 .5rem 4px;
+    border-bottom: 1px solid rgb(40, 40, 40);   
+}
+
+.summary-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 4px 8px 0;
+    border-bottom: 1px solid rgb(40, 40, 40);
+}
+
+.summary-price p {
+    margin-bottom: 0;
+}
+
+.summary-btn {
+    padding: 10px 8px;
+}
+
+.summary-btn button {
+    border: none;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+.check-out,
+.proceed-next {
+    margin-bottom: 3rem;
+    display: none;
+}
+
+.check-details,
+.proceed-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-delivery,
+.proceed-details-delivery {
+    width: 850px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    box-shadow: 8px 5px 2rem hsl(240, 100%, 50%);
+}
+
+.add-detail,
+.details-contact {
+    background-color: hsl(240, 100%, 50%);
+    border-radius: 6px;
+    padding-bottom: 2px;
+}
+
+.add-head,
+.contact-head,
+.delivery-method-head,
+.payment-head {
+    background-color: hsl(240, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    padding: 8px 6px;
+    border-radius: 6px;
+}
+
+.add-head h4,
+.contact-head h4 {
+    font-size: 17px;
+}
+
+.full-fill-add {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    padding: 15px 35px;
+}
+
+.fill-add {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.select-state select,
+.select-lga select {
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    padding: 6px 8px;
+    width: 220px;
+    height: 35px;
+    font-size: 14px;
+    box-shadow: 0 0 2px rgb(0 0 0);
+}
+
+.street-info {
+    text-align: center;
+}
+
+.street-info input,
+.detail-cnt-tel input {
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    padding: 6px 8px;
+    width: 440px;
+    height: 35px;
+    font-size: 14px;
+    box-shadow: 0 0 2px rgb(0 0 0);
+}
+
+.detail-cnt-tel {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    padding: 30px 35px;
+    text-align: center;
+}
+
+.details-amount {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    padding: 20px 4px;
+    border: 1px solid hsl(240, 100%, 50%);
+}
+
+.detail-sub,
+.detail-deliv,
+.detail-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.detail-sub h6,
+.detail-deliv h6,
+.detail-total h6 {
+    margin-bottom: 0;
+    line-height: normal;
+}
+
+.detail-sub p,
+.detail-deliv p,
+.detail-total p {
+    margin-bottom: 0;
+}
+
+.detail-deliv {
+    margin: 1rem 0;
+}
+
+.detail-total,
+.view-detail-total {
+    border-top: 1px solid hsl(0, 0%, 26%);
+    padding-top: 1.5rem;
+}
+
+.detail-proceed {
+    border: 1px solid hsl(240, 100%, 50%);
+    border-radius: 6px;
+    padding: 15px 45px;
+}
+
+.detail-proceed button,
+.view-modify button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(240, 100%, 50%);
+    cursor: pointer;
+    transition: .8s;
+}
+
+.detail-proceed button:hover,
+.view-modify button:hover {
+    background-color: hsl(240, 100%, 35%);
+}
+
+.view-ur-order,
+.view-details-amount {
+    width: 250px;
+    border-radius: 6px;
+    background-color: white;
+    padding: 2px;
+    box-shadow: 8px 5px 2rem hsl(240, 100%, 50%);
+}
+
+.ur-order-head h6 {
+    margin-bottom: 0;
+    font-size: 15px;
+    padding: .5rem 0 .5rem 4px;
+    border-bottom: 1px solid rgb(40, 40, 40);
+}
+
+.view-list {
+    padding-left: 0;
+    height: 150px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.view-list-item {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid hsl(0, 0%, 27%);
+    padding: 10px 0 10px 8px;
+}
+
+.view-list-img img {
+    width: 50px;
+    height: 40px;
+}
+
+.view-list-abt h3 {
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.view-list-abt h4 {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.view-list-abt {
+    margin-left: 1.5rem;
+}
+
+.view-details-amount {
+    margin-top: 2rem;
+    padding: 8px 4px;
+}
+
+.view-detail-sub,
+.view-detail-deliv,
+.view-detail-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.view-detail-sub h6,
+.view-detail-deliv h6,
+.view-detail-total h6 {
+    margin-bottom: 0;
+}
+
+.view-detail-sub p,
+.view-detail-deliv p,
+.view-detail-total p {
+    margin-bottom: 0;
+}
+
+.view-detail-deliv {
+    margin: 12px 0;
+}
+
+.view-detail-total {
+    padding-top: 1rem;
+    margin-bottom: 12px;
+}
+
+.view-modify {
+    padding: 1rem 20px;
+    border-top: 1px solid rgb(64, 64, 64);
+}
+
+.delivery-method-head h4,
+.payment-head h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.door-deliv-only,
+.cashon-deliv-only {
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px 20px;
+    margin-bottom: 0;
+    border-radius: 6px;
+}
+
+.delivery-method-detail,
+.payment-method {
+    background-color: hsl(240, 100%, 50%);
+    border-radius: 6px;
+    border-bottom: 2px solid hsl(240, 100%, 50%);
+}
+
+.address-details {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    border-bottom: 2px solid hsl(240, 100%, 50%);   
+    border-top: 1px solid hsl(240, 100%, 50%);   
+}
+
+.address-details {
+    padding: 2px;
+}
+
+.change-address {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 5px;
+    border-bottom: 1px solid rgb(91, 91, 91);
+}
+
+.change-address h4,
+.change-address h5 {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.change-address h5 {
+    color: hsl(240, 100%, 50%);
+    font-weight: bold;
+}
+
+.address-details-user {
+    padding: 10px 0 10px 20px;
+}
+
+.address-details-user p {
+    margin-bottom: 0;
+}

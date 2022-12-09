@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double A's</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body class="body">
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-bars"></i>
+            <h3>Double A's<i class="fa-solid fa-tag"></i></h3>
+        </div>
+
+        <div class="search">
+            <form action="">
+                <div class="find">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="searchBtn" placeholder="search">
+                </div>
+                <button id="srch">Search</button>
+            </form>
+        </div>
+
+        <div class="details">
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+                <p>User</p>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="pop-modal">
+            </div>
+            <div class="user-pop-dn">
+                <div class="user-sign-btn">
+                    <a href="./sign-in.html" class="pop-sign-btn"><button>sign in</button></a>
+                </div>
+                <ul class="user-pop-menu-list">
+                    <li><a href=""><i class="fa-solid fa-user"></i>My account</a></li>
+                    <li><a href=""><i class="fa-solid fa-box"></i>Orders</a></li>
+                </ul>
+            </div>
+            <div class="help">
+                <i class="fa-solid fa-question"></i>
+                <p>Help</p>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="pop-modal2">
+            </div>
+            <div class="user-pop-dn2">
+                <ul class="user-pop-menu-list2">
+                    <li><a href="">Help center</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">How to shop on Jumia</a></li>
+                    <li><a href="">Return and Refunds</a></li>
+                </ul>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>cart</p>
+            </div>
+        </div>
+    </nav>
+
+    <main class="index-page">
+        <div class="top-main">
+            <div class="sidebar">
+                <ul class="top-list">
+                    <li class="li-1"><i class="fa-sharp fa-solid fa-person"></i><a href="./mens.html">Men's wear</a>
+                        <ul class="men">
+                            <li class="m-jeans"><a href="./mens.html">Men Jeans</a></li>
+                            <li class="m-l-sleeves"><a href="./mens.html">Men long sleeves</a></li>
+                            <li class="m-t-s"><a href="./mens.html">Men T-shirt</a></li>
+                        </ul>
+                    </li>
+                    <li class="li-2"><i class="fa-solid fa-person-dress"></i><a href="./women.html">Women's wear</a>
+                        <ul class="women">
+                            <li class="w-gown"><a href="./women.html">Women's Gown</a></li>
+                            <li class="w-pant"><a href="./women.html">Women's Pant</a></li>
+                            <li class="w-skirt"><a href="./women.html">Women's Skirt</a></li>
+                        </ul>
+                    </li>
+                    <li class="li-3"><i class="fa-solid fa-plug"></i><a href="./electronics.html">Electronics</a> 
+                        <ul class="electronics">
+                            <li class="e-cable"><a href="./electronics.html">Cables</a></li>
+                            <li class="e-ear"><a href="./electronics.html">Earphones</a></li>
+                            <li class="e-systems"><a href="./electronics.html">Systems</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="carousel11">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <a href="">
+                                <img src="./Electronics/Earphones/hyperX/game-headset-blue-and-black.jpg"
+                                    class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="">
+                                <img src="./Men-wears/Round-necks/calvin-klein-hard-core.jpg" class="d-block w-100"
+                                    alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="">
+                                <img src="./Women-wears/Skirts/SKIRT.jpg" class="d-block w-100" alt="..."
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="promo">
+                <a href="" class="prA1">
+                    <div class="promo1">
+                        <div class="timeleft"></div>
+                        <img src="./Men-wears/Long-sleeves/fila-sweater-logo-designed.jpg" alt="">
+                        <p>Fila sweater long sleeves blue black design</p>
+                        <div class="price">
+                            <div class="pFlex">
+                                <h4>$64.00</h4>
+                                <h5>80%</h5>
+                            </div>
+                            <div class="cancel">
+                                <h4>$80.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="prA2">
+                    <div class="promo2">
+                        <div class="timeleft"></div>
+                        <img src="./Electronics/Systems/hp-gaming/hp-gaming-laptop.jpg" alt="">
+                        <p>HP gaming laptop core i5</p>
+                        <div class="price">
+                            <div class="pFlex2">
+                                <h4>$640.00</h4>
+                                <h5>80%</h5>
+                            </div>
+                            <div class="cancel">
+                                <h4>$800.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <section>
+            <div class="products">
+                <div class="products1">
+                    <div class="pro001">
+                        <div class="timeleft"></div>
+                        <img src="./Men-wears/Long-sleeves/fila-sweater-logo-designed.jpg" alt="">
+                        <p>Fila sweater long sleeves blue black design</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro002">
+                        <div class="timeleft"></div>
+                        <img src="./Electronics/Earphones/hyperX/game-headset-blue-and-black.jpg" alt="">
+                        <p>HyperX gaming headset</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro003">
+                        <div class="timeleft"></div>
+                        <img src="./Men-wears/Jeans/calvin-klein-deep-blue-red-tag.jpg" alt="">
+                        <p>Calvin klein deep blue jean with red tag</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro004">
+                        <div class="timeleft"></div>
+                        <img src="./Men-wears/Long-sleeves/fila-deep-blue.jpg" alt="">
+                        <p>Long sleeve fila deep blue</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro005">
+                        <div class="timeleft"></div>
+                        <img src="./Women-wears/Skirts/jean-floor-length-slim-skirt.jpg" alt="">
+                        <p>Beautiful long slim bottom flower Skirt</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="products2">
+                    <div class="pro001">
+                        <div class="timeleft"></div>
+                        <img src="./Electronics/Earphones/Maxell/maxell-earphones.jpg" alt="">
+                        <p>Maxell 3.5 earphones with strong bass</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro002">
+                        <div class="timeleft"></div>
+                        <img src="./Women-wears/Skirts/skirt-crop-top.jpg" alt="">
+                        <p>floral skirt with crop top</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro003">
+                        <div class="timeleft"></div>
+                        <img src="./Women-wears/gowns/bridal-gown.jpg" alt="">
+                        <p>Long bridal gown with linen</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro004">
+                        <div class="timeleft"></div>
+                        <img src="./Men-wears/Round-necks/calvin-klein-flow-white-and-blue.jpg" alt="">
+                        <p>calvin klein slim sport top for men</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro005">
+                        <div class="timeleft"></div>
+                        <img src="./Electronics/Cables/type-c-cables.jpg" alt="">
+                        <p>Type C chargers for samsung A12, A51, A71 and more</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="products3">
+                    <div class="pro001">
+                        <div class="timeleft"></div>
+                        <img src="./Men-wears/Round-necks/tommy-hilfiger-navy-blue-and-white.jpg" alt="">
+                        <p>Tommy hilfiger navy dark blue and white t-shirt</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro002">
+                        <div class="timeleft"></div>
+                        <img src="./Women-wears/Pants/A-AND-B.jpg" alt="">
+                        <p>Women traditional attire jump suit</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro003">
+                        <div class="timeleft"></div>
+                        <img src="./Men-wears/Long-sleeves/versace-gold-black-sweater.jpg" alt="">
+                        <p>Royal versace long sleeves golden template design</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro004">
+                        <div class="timeleft"></div>
+                        <img src="./Women-wears/Pants/versace-couture-jeans.jpg" alt="">
+                        <p>Couture versace jeans for female</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro005">
+                        <div class="timeleft"></div>
+                        <img src="./Electronics/Systems/samsung/samsung.jpg" alt="">
+                        <p>Samsung galaxy book pro 360</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="products4">
+                    <div class="pro001">
+                        <div class="timeleft"></div>
+                        <img src="./Electronics/Earphones/sennheiser/sennheiser-wireless.jpg" alt="">
+                        <p>Sennheiser true wireless earphones and earbuds</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro002">
+                        <div class="timeleft"></div>
+                        <img src="./Women-wears/Skirts/jean-bottom-lifting-grey.jpg" alt="">
+                        <p>Sexy lifting bottom short skirt for female</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro003">
+                        <div class="timeleft"></div>
+                        <img src="./Electronics/Cables/magnetic-charger.jpg" alt="">
+                        <p>Magnetic for all kind of phones</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro004">
+                        <div class="timeleft"></div>
+                        <img src="./Men-wears/Jeans/versace-jean-crazy.jpg" alt="">
+                        <p>Versace crazy jeans for men</p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                    <div class="pro005">
+                        <div class="timeleft"></div>
+                        <img src="./Electronics/Systems/dell/dell.jpg" alt="">
+                        <p>Dell corei5 6gb RAM 567 ROM </p>
+                        <div class="price">
+                            <h4>$64.00</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="foot-head">
+            <h3>Double A's<i class="fa-solid fa-tag"></i></h3>
+        </div>
+
+        <div class="footerBum">
+            <div class="helpYou">
+                <h6>Let us help you</h6>
+                <ul>
+                    <li><a href="">Help center</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">How to shop on Double A's?</a></li>
+                    <li><a href="">Delivery options and timelines</a></li>
+                    <li><a href="">How to return a product on Double A's?</a></li>
+                </ul>
+            </div>
+            <div class="aboutUs">
+                <h6>About Double A's</h6>
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                    <li><a href="">Privacy and Cookie Notice</a></li>
+                    <li><a href="">Flash sales</a></li>
+                    <li><a href="">Official stores</a></li>
+                </ul>
+            </div>
+            <div class="contactUs">
+                <h6>Follow us on</h6>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="payment">
+                <h6>Payment methods</h6>
+                <p>Our payment method is cash on delivery only</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>

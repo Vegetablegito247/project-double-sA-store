@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-cart page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/add-cart.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-bars"></i>
+            <h3>Double A's<i class="fa-solid fa-tag"></i></h3>
+        </div>
+
+        <div class="search">
+            <form action="">
+                <div class="find">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="searchBtn" placeholder="search">
+                </div>
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="details">
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+                <p>User</p>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="help">
+                <i class="fa-solid fa-question"></i>
+                <p>Help</p>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>cart</p>
+            </div>
+        </div>
+    </nav>
+
+    <main class="add-cart-preview">
+        <div class="amount">
+            <h5>Cart</h5>
+            <p class="amount-num">(1)</p>
+        </div>
+        <div class="list">
+            <div class="check-list-1">
+                <div class="check">
+                    <div class="check-p">
+                        <div class="check-p-img">
+                            <img src="./Women-wears/Pants/A-AND-B.jpg" alt="">
+                        </div>
+                        <div class="check-p-comp">
+                            <h3>Jump suit</h3>
+                            <h4>Female wears</h4>
+                            <h3 class="check-logo">Double A's<i class="fa-solid fa-tag"></i></h3>
+                        </div>
+                    </div>
+                    <div class="check-price">
+                        <h4>$64.00</h4>
+                        <div class="check-add">
+                            <i class="fa-solid fa-minus"></i>
+                            <h4>1</h4>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="check-remove">
+                    <i class="fa-solid fa-trash"></i>
+                    <p>remove</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h6>Cart summary</h6>
+            <div class="summary-price">
+                <p>Subtotal</p>
+                <span class="summary-amnt">$64.00</span>
+            </div>
+            <div class="summary-btn">
+                <button>checkout <span class="span sumary-btn-amnt">($64.00)</span></button>
+            </div>
+        </div>
+    </main>
+
+    <main class="check-out">
+        <div class="check-details">
+            <div class="details-delivery">
+                <div class="add-detail">
+                    <div class="add-head">
+                        <h4>1. Address Details</h4>
+                    </div>
+                    <div class="full-fill-add">
+                        <div class="fill-add">
+                            <div class="state-lga">
+                                <div class="state-lga-head">
+                                    <h6>State</h6>
+                                </div>
+                                <div class="select-state">
+                                    <label for="state">*</label>
+                                    <select name="state" id="state">
+                                        <option value="Lagos">Lagos</option>
+                                        <option value="Ogun">Ogun</option>
+                                        <option value="Port-Harcourt">Port-Harcourt</option>
+                                        <option value="Federal Capital Territory">Federal Capital Territory</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="lagos">
+                                <div class="lga-head">
+                                    <h6>LGA</h6>
+                                </div>
+                                <div class="select-lga">
+                                    <label for="lagos-lab">*</label>
+                                    <select name="lagos-lab" id="lga">
+                                        <div class="Lagos-area">
+                                            <option value="surulere">Surulere</option>
+                                            <option value="Oshodi">Oshodi</option>
+                                            <option value="Lagos Mainland">Lagos Mainland</option>
+                                            <option value="Lagos Island">Lagos Island</option>
+                                            <option value="Victoria Island">Victoria Island</option>
+                                            <option value="Lekki">Lekki</option>
+                                            <option value="Ajah">Ajah</option>
+                                        </div>
+                                        <div class="Ogun-area">
+                                            <option value="Ijebu-Ode">Ijebu-Ode</option>
+                                            <option value="Obafemi-Owode">Obafemi-Owode</option>
+                                            <option value="Ado-Odo-Ota">Ado-Odo-Ota</option>
+                                            <option value="Lagos Island">Lagos Island</option>
+                                            <option value="Shagamu">Shagamu</option>
+                                            <option value="Ifo">Ifo</option>
+                                        </div>
+                                        <div class="PH-area">
+                                            <option value="Rumuobiekwe">Rumuobiekwe</option>
+                                            <option value="Nkpogu">Nkpogu</option>
+                                            <option value="Orolozu">Orolozu</option>
+                                            <option value="New GRA">New GRA</option>
+                                        </div>
+                                        <div class="FCT-area">
+                                            <option value="Karshi">Karshi</option>
+                                            <option value="Zuba">Zuba</option>
+                                            <option value="Kwali">Kwali</option>
+                                            <option value="Rubochi">Rubochi</option>
+                                        </div>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="street-info">
+                            <label for="street">*</label>
+                            <input type="text" placeholder="Home address" id="str">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-contact">
+                    <div class="contact-head">
+                        <h4>2. Contact info</h4>
+                    </div>
+                    <div class="detail-cnt-tel">
+                        <label for="call">*</label>
+                        <input type="tel" placeholder="Phone number" id="getTel">
+                    </div>
+                </div>
+
+                <div class="details-amount">
+                    <div class="detail-sub">
+                        <h6>Subtotal</h6>
+                        <p>$64.00</p>
+                    </div>
+                    <div class="detail-deliv">
+                        <h6>Delivery fee</h6>
+                        <p>$12.00</p>
+                    </div>
+                    <div class="detail-total">
+                        <h6>Total</h6>
+                        <p>$76.00</p>
+                    </div>
+                </div>
+                <div class="detail-proceed">
+                    <button>Proceed to next step</button>
+                </div>
+            </div>
+
+            <div class="view-cart">
+                <div class="view-ur-order">
+                    <div class="ur-order-head">
+                        <h6>Your order (1 item)</h6>
+                    </div>
+                    <ul class="view-list">
+                        <li class="view-list-item">
+                            <div class="view-list-img">
+                                <img src="./Women-wears/Pants/A-AND-B.jpg" alt="">
+                            </div>
+                            <div class="view-list-abt">
+                                <h3>Jump suit</h3>
+                                <h4>$64.00</h4>
+                                <h3 class="view-list-qty">QTY --</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="view-details-amount">
+                    <div class="view-detail-sub">
+                        <h6>Subtotal</h6>
+                        <p>$64.00</p>
+                    </div>
+                    <div class="view-detail-deliv">
+                        <h6>Delivery fee</h6>
+                        <p>$12.00</p>
+                    </div>
+                    <div class="view-detail-total">
+                        <h6>Total</h6>
+                        <p>$76.00</p>
+                    </div>
+                    <div class="view-modify">
+                        <button>Modify cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="proceed-next">
+        <div class="proceed-details">
+            <div class="proceed-details-delivery">
+                <div class="delivery-method-detail">
+                    <div class="delivery-method-head">
+                        <h4>Delivery Method</h4>
+                    </div>
+                    <p class="door-deliv-only">
+                        We are sorry that we can't provide any other delivery method
+                        except door delivery. We advice that you check your address below
+                        and modify them, so as to get your order directly to you
+                    </p>
+                </div>
+
+                <div class="address-details">
+                    <div class="change-address">
+                        <h4>Address Details</h4>
+                        <h5>CHANGE</h5>
+                    </div>
+                    <div class="address-details-user">
+                        <p class="user-name">User name</p>
+                        <p class="user-address">User address</p>
+                        <p class="user-number">User number</p>
+                    </div>
+                </div>
+
+                <div class="payment-method">
+                    <div class="payment-head">
+                        <h4>Payment Method</h4>
+                    </div>
+                    <p class="cashon-deliv-only">
+                        Our payment method is a cash on delivery method, we ensure that you
+                        get to see your product before paying, so as to build reliability and trust
+                        among we the company and you our customer
+                    </p>
+                </div>
+
+                <div class="details-amount">
+                    <div class="detail-sub">
+                        <h6>Subtotal</h6>
+                        <p>$64.00</p>
+                    </div>
+                    <div class="detail-deliv">
+                        <h6>Delivery fee</h6>
+                        <p>$12.00</p>
+                    </div>
+                    <div class="detail-total">
+                        <h6>Total</h6>
+                        <p>$76.00</p>
+                    </div>
+                </div>
+                <div class="detail-proceed">
+                    <button>CONFIRM ORDER</button>
+                </div>
+            </div>
+
+            <div class="view-cart">
+                <div class="view-ur-order">
+                    <div class="ur-order-head">
+                        <h6>Your order (1 item)</h6>
+                    </div>
+                    <ul class="view-list">
+                        <li class="view-list-item">
+                            <div class="view-list-img">
+                                <img src="./Women-wears/Pants/A-AND-B.jpg" alt="">
+                            </div>
+                            <div class="view-list-abt">
+                                <h3>Jump suit</h3>
+                                <h4>$64.00</h4>
+                                <h3 class="view-list-qty">QTY --</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="view-details-amount">
+                    <div class="view-detail-sub">
+                        <h6>Subtotal</h6>
+                        <p>$64.00</p>
+                    </div>
+                    <div class="view-detail-deliv">
+                        <h6>Delivery fee</h6>
+                        <p>$12.00</p>
+                    </div>
+                    <div class="view-detail-total">
+                        <h6>Total</h6>
+                        <p>$76.00</p>
+                    </div>
+                    <div class="view-modify">
+                        <button>Modify cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

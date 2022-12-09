@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Manrope&family=Overpass:wght@400;700&family=Public+Sans:wght@300;400;700&family=Red+Hat+Text:ital,wght@0,700;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 0%);
+}
+
+.logoHead {
+    text-align: center;
+    color: blue;
+    margin-top: 3rem;
+    font-size: 40px;
+}
+
+#form {
+    width: 550px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    margin: 2.5rem auto;
+    border-radius: 10px;
+    box-shadow: 8px 5px 2rem hsl(240, 100%, 50%);
+}
+
+form .guide {
+    text-align: center;
+    border-bottom: 1px solid hsl(0, 0%, 0%);
+    color: hsl(230, 5%, 47%);
+}
+
+form .guide p {
+    margin-bottom: 10px;
+}
+
+.st-details,
+.nd-details,
+.pword {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.st-details input,
+.nd-details input,
+.rd-details input {
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    padding: 6px 8px;
+    width: 220px;
+    height: 35px;
+    font-size: 14px;
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.nd-details input[type=text] {
+    margin-left: 10px;
+}
+
+.rd-details {
+    margin-top: 1rem;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.btn button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(240, 100%, 50%);
+    cursor: pointer;
+    transition: 2s;
+}
+
+.btn button:hover {
+    background-color: hsl(240, 100%, 35%);
+}
+
+form .foot {
+    text-align: center;
+    border-top: 1px solid hsl(0, 0%, 0%);
+    margin-top: 2rem;
+}
+
+form .foot p, form .guide p {
+    color: hsl(230, 5%, 47%);
+    font-weight: 500;
+    margin-top: 10px;
+}
