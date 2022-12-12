@@ -977,6 +977,7 @@ footer .foot-head {
         display: block;
         text-align: center;
         font-size: 10px;
+        cursor: pointer;
     }
     
     .home-botmobile {
