@@ -90,6 +90,34 @@ nav .details .user {
     position: relative;
 }
 
+.details-botmobile {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(240, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    padding: 5px 8px;
+}
+
+.nav-botmobile {
+    position: sticky;
+    top: 90vh;
+    left: 0;
+    z-index: 6;
+    display: none;
+}
+
+.home-botmobile,
+.menubar-botmobile,
+.account-botmobile,
+.help-botmobile {
+    display: block;
+    text-align: center;
+}
+
+.home-botmobile {
+    color: black;
+}
+
 .user-pop-dn {
     width: 200px;
     border-radius: 6px;
@@ -948,6 +976,34 @@ footer .foot-head {
     nav .details .cart .fa-cart-shopping {
         margin-left: 0;
         margin-right: 10px;
+    }
+
+    .details-botmobile {
+        display: flex;
+        justify-content: space-between;
+        background-color: hsl(240, 100%, 50%);
+        color: hsl(0, 0%, 100%);
+        padding: 5px 8px;
+    }
+    
+    .nav-botmobile {
+        position: sticky;
+        top: 90vh;
+        left: 0;
+        z-index: 6;
+        display: block;
+    }
+    
+    .home-botmobile,
+    .menubar-botmobile,
+    .account-botmobile,
+    .help-botmobile {
+        display: block;
+        text-align: center;
+    }
+    
+    .home-botmobile {
+        color: black;
     }
 
     .top-main {
